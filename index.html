@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Svenska II" startnode="1" creator="Twine" creator-version="2.2.1" ifid="34270009-1BA4-4FCE-90E2-7496379429D6" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Natt 1" tags="" position="595.5,74" size="100,100">You wake up in the middle of the night, it is dark and still outside. The snow has stopped falling and the clouds are breaking up. The only light is a quarter moon peeking through the bare branches of the trees and the clock still blinking 12:00. 
+<tw-storydata name="Svenska II" startnode="1" creator="Twine" creator-version="2.2.1" ifid="34270009-1BA4-4FCE-90E2-7496379429D6" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Natt 1" tags="" position="595.5,74" size="100,100">You wake up in the middle of the night; it is dark and still outside. The snow has stopped falling and the clouds are breaking up. The only light is a half moon peeks through the bare branches of the trees.
 
 As you lay in bed you begin to wonder how you found yourself in this strange place.
 
@@ -21,20 +21,20 @@ As you lay in bed you begin to wonder how you found yourself in this strange pla
 
 &quot;Varför är jag i Sverige?&quot; You whisper to yourself. You have no recollection of why you are here or how you know those strange words. As far as you can tell English is your primary language. 
 
-Feeling restless, you are about to stand up and go to the bathroom when you hear a rustling outside the window. You freeze, petrified by the unknown.
+Feeling restless, you are about to stand up to go to the bathroom when you hear a rustling outside the window. You freeze, petrified by the unknown.
 
-A motion detector-activated light turns on and you hear the trample of footsteps. moving away from the house.
+A motion detector-activated light turns on and you hear the trample of footsteps moving away from the house.
 
 [[&quot;Vem är där?&quot;|Godd Natt 3]]
 </tw-passagedata><tw-passagedata pid="3" name="Godd Natt 3" tags="" position="855.5,74" size="100,100">Who&#39;s there? You gather courage to look out the window, but by the time you get close enough to peer out it is too late. 
 
 Was it a deer? A person? Some strange thing going bump in the night?
 
-Not being prone to superstition, you shake it off and dive back under the covers to fall back asleep. After all, there are plenty of wild animals in the Swedish skagen. 
+Not feeling superstitious, you shake it off and dive back under the covers to fall asleep. After all, there are plenty of wild animals in the Swedish skagen. 
 
 [[Sov| God Morgon]]</tw-passagedata><tw-passagedata pid="4" name=" God Morgon" tags="" position="977.5,74" size="100,100">(set: $extraSleep to 0)
 
-You wake up; it is finally morning. The bright morning sun casts a glare on the previous two days&#39; tremendous snowfall.
+You wake up; it is finally morning. The bright morning sun casts a glare on the previous days&#39; tremendous snowfall.
 
 [[You feel refreshed and get up|GodMorgon2]]
 
@@ -44,13 +44,13 @@ KNOCK KNOCK
 
 It is Sven, the old man who found you yesterday. His voice rings out through the door,
 
-&quot;Hur mår du i dag? Är du bra? Feeling fine?&quot;
+&quot;Hur mår du i dag? Mår du bra? Feeling fine?&quot;
 
-You ask yourself how you feel. Definitely better than yesterday. But does it quality as &#39;good&#39;?
+You ask yourself how you feel. Definitely better than yesterday. But does it quality as &#39;fine&#39;?
 
-(link:&quot;Ja, jag mur bra.&quot;)[(set: $Q1 to 0)(goto: &quot;Sven1&quot;)]
+(link:&quot;Ja, jag mår bra.&quot;)[(set: $Q1 to 0)(goto: &quot;Sven1&quot;)]
 
-(link:&quot;Nej, jag mur inte bra.&quot;)[(set: $Q1 to 1)(goto: &quot;Sven1&quot;)]
+(link:&quot;Nej, jag mår inte bra.&quot;)[(set: $Q1 to 1)(goto: &quot;Sven1&quot;)]
 </tw-passagedata><tw-passagedata pid="6" name="Sven1" tags="" position="1289.5,87" size="100,100">(set: $ostAmount to 0)(set: $keksAmount to 0)(set: $paprikaAmount to 0)(set: $keks to (datamap:&quot;name&quot;, &quot;Keks&quot;, &quot;description&quot;,&quot;A thick cracker with sunflower seeds around its crust.&quot;, &quot;pickupText&quot;, &quot;You take a delicious thick cracker with sunflower seeds around its crust.&quot;, &quot;isCarried&quot;, false))(set: $ost to (datamap:&quot;name&quot;, &quot;Ost&quot;, &quot;description&quot;,&quot;A creamy, light cheese, sliced up for you.&quot;, &quot;pickupText&quot;, &quot;You take a couple of slices of a creamy, light cheese.&quot;, &quot;pickupMoreText&quot;, &quot;You take more of the delicious cheese.&quot;, &quot;isCarried&quot;, false))(set: $paprika to (datamap:&quot;name&quot;, &quot;Paprika&quot;, &quot;description&quot;,&quot;A green belll pepper, sliced thinly&quot;, &quot;pickupText&quot;, &quot;You grab a few slices of thin bell pepper and put them on your plate.&quot;, &quot;isCarried&quot;, false))
 (if: $Q1 is 0)[&quot;Ja visst! Det är bra!&quot; Sven says through the door, his smile coming through in the tone of his voice.]
 (if: $Q1 is 1)[&quot;Så synd!&quot; He sounds disappointed. &quot;Let me get you some more medicine.&quot;]
@@ -60,59 +60,55 @@ You ask yourself how you feel. Definitely better than yesterday. But does it qua
 
 [[&quot;Nej, jag vill inte ha frukost.&quot;|ute0]]</tw-passagedata><tw-passagedata pid="7" name="frukost1" tags="" position="1317.5,316" size="100,100">A few minutes later you come back to the kitchen and sit down at the table. They have a nice spread of crackers, cheese and sliced bell peppers.
 
-&quot;Vad vill du äte?&quot; Lotta asks you. 
+&quot;Vad vill du äta?&quot; Lotta asks you. 
 
-(if: $keks&#39;s isCarried is false)[(link: &quot;Ta en keks&quot;)[(set:$selectedItem to $keks)(set: $previousPassage to &quot;frukost1&quot;)(set: $keksAmount to 1)
+(if: $keks&#39;s isCarried is false)[(link: &quot;Ta kex&quot;)[(set:$selectedItem to $keks)(set: $previousPassage to &quot;frukost1&quot;)(set: $keksAmount to 1)
 (set:$keks&#39;s isCarried to true)(goto: &quot;Item Acquired&quot;)]]
 
-(if: $ost&#39;s isCarried is false)[(link: &quot;Ta osten&quot;)[(set:$selectedItem to $ost)(set: $previousPassage to &quot;frukost1&quot;)(set: $ostAmount to $ostAmount + 1)(set:$ost&#39;s isCarried to true)(goto: &quot;itemcheese&quot;)]]
+(if: $ost&#39;s isCarried is false)[(link: &quot;Ta ost&quot;)[(set:$selectedItem to $ost)(set: $previousPassage to &quot;frukost1&quot;)(set: $ostAmount to $ostAmount + 1)(set:$ost&#39;s isCarried to true)(goto: &quot;itemcheese&quot;)]](if: $ost&#39;s isCarried is true and $ostAmount &lt;6)[(link: &quot;Ta mer ost&quot;)[(set:$selectedItem to $ost)(set: $previousPassage to &quot;frukost1&quot;)(set: $ostAmount to $ostAmount + 1)(goto: &quot;itemcheese&quot;)]]
 
-(if: $ost&#39;s isCarried is true and $ostAmount &lt;6)[(link: &quot;Ta mer osten&quot;)[(set:$selectedItem to $ost)(set: $previousPassage to &quot;frukost1&quot;)(set: $ostAmount to $ostAmount + 1)(goto: &quot;itemcheese&quot;)]]
-
-(if: $paprika&#39;s isCarried is false)[(link: &quot;Ta ett paprika&quot;)[(set:$selectedItem to $paprika)(set: $previousPassage to &quot;frukost1&quot;)(set:$paprika&#39;s isCarried to true)(set: $paprikaAmount to 1)(goto: &quot;Item Acquired&quot;)]]
+(if: $paprika&#39;s isCarried is false)[(link: &quot;Ta paprika&quot;)[(set:$selectedItem to $paprika)(set: $previousPassage to &quot;frukost1&quot;)(set:$paprika&#39;s isCarried to true)(set: $paprikaAmount to 1)(goto: &quot;Item Acquired&quot;)]]
 
 [[Take a look at the newspaper|frukost2]]</tw-passagedata><tw-passagedata pid="8" name="Item Acquired" tags="" position="1114.5,303" size="100,100">[(print: $selectedItem&#39;s &quot;pickupText&quot;)]
 
 
-(link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="9" name="frukost2" tags="" position="1308.5,513" size="100,100">(set: $Q2 to 0)
-
-Sven turns to you as Lotta goes to make tea.  Sven picks up the newspaper.
+(link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="9" name="frukost2" tags="" position="1308.5,513" size="100,100">(set: $Q2 to 0)Sven turns to you as Lotta gets up to make tea.  Sven picks up the newspaper and speaks,
 
 &quot;I can&#39;t believe the paperboy made it up here through all this snow. The roads must be clear then.&quot;
 
-The front page shows a picture of Benny, the missing businessman. Sven tells you that search parties are looking for him.
+The front page shows a picture of Benny, the missing businessman. Sven tells you that search parties are out looking for him.
 
-Lotta pipes in, &quot;Va kan åke till polisen efter frukost.&quot;
+Lotta pipes in, &quot;Va kan åka till polisen efter frukosten.&quot;
 
 &quot;Yes,&quot; Sven adds, &quot;Maybe we can drive to town and talk to the police about your situation.&quot;
 
 To town? &quot;How far is it,&quot; you wonder.
 
-(link:&quot;Var är den stad?&quot;)[(set: $Q2 to 0)(goto: &quot;frukost3&quot;)]
-(link:&quot;Var är stan?&quot;)[(set: $Q2 to +1)(goto: &quot;frukost3&quot;)]
+(link:&quot;Var ligger den stad?&quot;)[(set: $Q2 to 0)(goto: &quot;frukost3&quot;)]
+(link:&quot;Var ligger stan?&quot;)[(set: $Q2 to +1)(goto: &quot;frukost3&quot;)]
 
-</tw-passagedata><tw-passagedata pid="10" name="frukost3" tags="" position="1315.5,730" size="100,100">(if: $Q2 is 0)[&quot;Var är stan - inte &#39;den stad&#39;.&quot; Lotta helpfully corrects you.]
+</tw-passagedata><tw-passagedata pid="10" name="frukost3" tags="" position="1315.5,730" size="100,100">(if: $Q2 is 0)[&quot;Var ligger stan - inte &#39;den stad&#39;.&quot; Lotta helpfully corrects you.]
 
 &quot;Stan är femton minuter från vårt hus.&quot; Sven adds, &quot;Not too far, but it depends on this snow!&quot;
 
 [[Take a cup of tea|frukost4]]
-</tw-passagedata><tw-passagedata pid="11" name="frukost4" tags="" position="1315.5,957" size="100,100">You sit there and finish your breakfast in silence. Sven begins to clean up when Lotta turns to him and says, &quot;Jag ska ringa till polisen nu.&quot; 
+</tw-passagedata><tw-passagedata pid="11" name="frukost4" tags="" position="1315.5,957" size="100,100">You sit there and finish your breakfast in silence. Sven begins to clean up when Lotta turns to him and says, &quot;Jag ska ringa polisen nu.&quot; 
 
-She picks up the kitchen landline. &quot;Ni kan åke utan mig.&quot;
+She picks up the kitchen landline. &quot;Ni kan åka utan mig.&quot;
 
-Sven translates, &quot;Lotta doesn&#39;t want to come. She doesn&#39;t like the police chief who took charge after she left.&quot; He turns to her and adds, &quot;Ok, vi ska åke til stan med bilen. Hej då!&quot;
+Sven translates, &quot;Lotta doesn&#39;t want to come. She doesn&#39;t like the police chief who took charge after she left.&quot; He turns to her and adds, &quot;Okej, vi ska åka till stan med bilen. Hej då!&quot;
 
 Turning back to you, he says, &quot;Let&#39;s get moving, say goodbye to Lotta and I&#39;ll start the bil, um, the car.&quot;
 
-(if: $Q1 is 1)[He comes back one moment later, &quot;Oh yes, here are your medications you wanted.&quot; He hands you two pills and a cup of water. Do you take them?
+(if: $Q1 is 1)[He comes back one moment later, &quot;Oh yes, here are the medications you wanted.&quot; He hands you two pills and a cup of water. Do you take them?
 (link: &quot;Yes&quot;)[(set:$Q2 to 1)(goto: &quot;ute1&quot;)]
 
 (link: &quot;No way&quot;)[(set:$Q2 to 2)(goto: &quot;ute1&quot;)
-]](if: $Q1 is 0)[[[&quot;Hej då!&quot;|ute1]]]</tw-passagedata><tw-passagedata pid="12" name="ute1" tags="" position="1291.5,1199" size="100,100">(if: $Q2 is 1)[You pop the two pills and wash them down with water.] (if: $Q2 is 2)[You pocket the pills and drink the water.] You put on your boots - finally dry - and what must be Lotta&#39;s spare coat - it is a size too big for you.
+]](if: $Q1 is 0)[[[&quot;Hej då!&quot;|ute1]]]</tw-passagedata><tw-passagedata pid="12" name="ute1" tags="" position="1291.5,1199" size="100,100">(if: $Q2 is 1)[You pop the two pills and wash them down with water.] (if: $Q2 is 2)[You pocket the pills and drink the water.] You put on your boots - finally dry - and what must be Lotta&#39;s spare coat. It is a size too small for you.
 
-&quot;Du har Lottas jacka, bra!&quot; Sven says, looking at the jacket. &quot;Ta på vantar och en mösse.&quot; He says, handing you mittens and then a knit cap. &quot;Det är kalt ute. In April, can you believe it?!&quot; 
+&quot;Du har Lottas jacka, bra!&quot; Sven says, looking at the jacket. &quot;Ta på vantar och en mösse.&quot; He says, handing you mittens and then a knit cap. &quot;Det är kallt ute. In April! Can you believe it?!&quot; 
 
-As you step outside, you see that it is still chilly. But the spring sun is strong and the snow appears to have begun melting. 
+As you step outside, you see that it is indeed still chilly. However, the spring sun is strong and the snow appears to have already begun melting. 
 
 You walk around the house to the garage when Sven yells out, &quot;AKTA DIG!&quot;
 
@@ -127,17 +123,17 @@ There is a man stuck in an old truck on the other side of the pile.
 
 &quot;Hur mår du, Lars?&quot;
 
-The two men have a short conversation. Sven is as animated as usual but the other man doesn&#39;t display much in the way of body language for you to read. Sven gestures several times to the snow pile blocking the road. As they returns to Sven&#39;s car you notice that Lars is holding a wooden duck in his hands. 
+The two men have a short conversation. Sven is animated as usual but the other man doesn&#39;t display much in the way of body language for you to read. Sven gestures several times to the snow pile blocking the road. As they returns to Sven&#39;s car you notice that &#39;Lars&#39; is holding a wooden duck in his hands. 
 
 [[&quot;What&#39;s the plan?&quot;|ute5a]]
 
-[[&quot;What&#39;s with the duck?&quot;|ute5]]</tw-passagedata><tw-passagedata pid="14" name="ute5" tags="" position="479.5,1282" size="100,100">&quot;Hans namn är Lars, men han heter &#39;Ankan&#39; - we call him &#39;the duck&#39;. He makes these wooden decoys for hunters. Han bor här - he lives just up the road, between us and Benny&#39;s estate actually. Poor guy says he has been stuck snowed in for 2 days.&quot;
+[[&quot;What&#39;s with the duck?&quot;|ute5]]</tw-passagedata><tw-passagedata pid="14" name="ute5" tags="" position="479.5,1282" size="100,100">&quot;Hans namn är Lars, men han heter &#39;Ankan&#39; - we call him &#39;the duck&#39;. He makes these wooden decoys for hunters. Han bor här - he lives just up the road, between us and Benny&#39;s estate actually. Poor guy says he has been stuck snowed in for 2 days, went out this morning for food, and now can&#39;t get back.&quot;
 
 Lars doesn&#39;t look in your direction but murmers a quick &quot;God morgon.&quot; 
 
-&quot;Well, I am stuck.&quot; Sven continues, &quot;Go up back to the house and tell Lotta to call the local snow plow - &#39;Ringa till Bjorn&#39;.&quot;
+&quot;Well, I am stuck.&quot; Sven continues, &quot;Go up back to the house and tell Lotta to call the local snow plow - &#39;Ring Björn&#39;.&quot;
 
-[[&quot;Hur kan jag gå till huset?&quot;|ute6]]</tw-passagedata><tw-passagedata pid="15" name="hill1" tags="" position="290.5,1039" size="100,100">The previous day&#39;s unease returns for a moment, but at least you have confirmed where you are. A deep breath of cold air feels fresh and lifts your spirits again. (if: $Q2 is 2)[Once you are out of sight you throw the two pills into the woods.]
+[[&quot;Hur kommer jag till huset?&quot;|ute6]]</tw-passagedata><tw-passagedata pid="15" name="hill1" tags="" position="290.5,1039" size="100,100">The previous day&#39;s unease returns for a moment, but at least you have confirmed where you are. A deep breath of cold air feels fresh and lifts your spirits again. (if: $Q2 is 2)[Once you are out of sight you throw the two pills into the woods.]
 
 You take your first steps up the hill and hit an intersection of two snowy, rural roads. 
 
@@ -145,13 +141,13 @@ You take your first steps up the hill and hit an intersection of two snowy, rura
 
 [[Ta till vänster|hillwrong 1a]]
 
-[[Ta till rakt fram|hillwrong 1b]]</tw-passagedata><tw-passagedata pid="16" name="hill2" tags="" position="306.5,879" size="100,100">You take a right and keep walking until you hit another intersection.
+[[Ta rakt fram|hillwrong 1b]]</tw-passagedata><tw-passagedata pid="16" name="hill2" tags="" position="306.5,879" size="100,100">You take a right and keep walking until you hit another intersection.
 
 [[Ta till höger|hill3]]
 
 [[Ta till vänster|hillwrong 2a]]
 
-[[Ta till rakt fram|hillwrong 2b]]</tw-passagedata><tw-passagedata pid="17" name="hillwrong 1a" tags="" position="112.5,999" size="100,100">You turn left. This doesn&#39;t seem to be the right way. There are no tire treads on this path.
+[[Ta rakt fram|hillwrong 2b]]</tw-passagedata><tw-passagedata pid="17" name="hillwrong 1a" tags="" position="112.5,999" size="100,100">You turn left. This doesn&#39;t seem to be the right way. There are no tire treads on this path.
 
 [[Go back|hill1]]</tw-passagedata><tw-passagedata pid="18" name="hillwrong 1b" tags="" position="467.5,1013" size="100,100">You go straight. This doesn&#39;t seem to be the right way. There are no tire treads on this path.
 
@@ -161,7 +157,7 @@ You take your first steps up the hill and hit an intersection of two snowy, rura
 
 [[Ta till vänster|hill4]]
 
-[[Ta till rakt fram|hillwrong 3b]]</tw-passagedata><tw-passagedata pid="20" name="hillwrong 2a" tags="" position="149.5,821" size="100,100">You turn left. This doesn&#39;t seem to be the right way. There are no tire treads on this path.
+[[Ta rakt fram|hillwrong 3b]]</tw-passagedata><tw-passagedata pid="20" name="hillwrong 2a" tags="" position="149.5,821" size="100,100">You turn left. This doesn&#39;t seem to be the right way. There are no tire treads on this path.
 
 [[Go back|hill2]]</tw-passagedata><tw-passagedata pid="21" name="hillwrong 2b" tags="" position="464.5,836" size="100,100">You continue straight, but the road doesn&#39;t look familiar.
 
@@ -173,7 +169,7 @@ You take your first steps up the hill and hit an intersection of two snowy, rura
 
 [[Ta till vänster|hillwrong 4b]]
 
-[[Ta till rakt fram|hill5]]</tw-passagedata><tw-passagedata pid="24" name="hillwrong 3b" tags="" position="458.5,670" size="100,100">Continuing straight, you feel like you are getting lost. 
+[[Ta rakt fram|hill5]]</tw-passagedata><tw-passagedata pid="24" name="hillwrong 3b" tags="" position="458.5,670" size="100,100">Continuing straight, you feel like you are getting lost. 
 
 [[Go back|hill3]]</tw-passagedata><tw-passagedata pid="25" name="hillwrong 4a" tags="" position="175.5,496" size="100,100">Your right turn was a wrong turn. This doesn&#39;t seem to be the correct way. 
 
@@ -183,9 +179,9 @@ You take your first steps up the hill and hit an intersection of two snowy, rura
 
 You enter the unlocked door, take off your boots and tell Lotta,
 
-[[&quot;Ringa till polisen, Sven ar död.&quot;|hill6a]]
+[[&quot;Ring polisen, Sven ar död.&quot;|hill6a]]
 
-[[&quot;Ringa till Bjorn, det är mycket snö.&quot;|hill6b]]</tw-passagedata><tw-passagedata pid="28" name="end" tags="" position="411.5,74" size="100,100">Thanks for continuing with Part Two of HOW DO YOU SAY MURDER IN SWEDISH. 
+[[&quot;Ring Björn, det finns mycket snö.&quot;|hill6b]]</tw-passagedata><tw-passagedata pid="28" name="end" tags="" position="411.5,74" size="100,100">Thanks for continuing with Part Two of HOW DO YOU SAY MURDER IN SWEDISH. 
 
 An interactive text for beginning (A1) learners
 
@@ -195,7 +191,7 @@ If you see any mistakes or have comments please email me by clicking (link: &quo
 
 You can also visit (link: &quot;my professional website&quot;)[(open-url: &quot;http://cedarinstructionaldesign.weebly.com&quot;)].
 
-[[start over|God Natt 1]]</tw-passagedata><tw-passagedata pid="29" name="ute2a" tags="" position="1021.5,1336" size="100,100">Ouch! you get smacked in the head with a chunk of falling snow! 
+[[start over|God Natt 1]]</tw-passagedata><tw-passagedata pid="29" name="ute2a" tags="" position="1021.5,1336" size="100,100">Ouch! You get smacked in the head with a chunk of falling snow! 
 
 &quot;We need to be careful!&quot; Sven says as he helps you up. &quot;The roads will be dangerous.&quot;
 
@@ -203,7 +199,7 @@ You can also visit (link: &quot;my professional website&quot;)[(open-url: &quot;
 
 &quot;We need to be careful!&quot; Sven laughs as he helps you up. &quot;The roads will be dangerous.&quot;
 
-[[Get in the car|ute3]]</tw-passagedata><tw-passagedata pid="31" name="ute6" tags="" position="239.5,1258" size="100,100">&quot;Ta till hoger, till höger, till vänster och rakt fram.&quot;
+[[Get in the car|ute3]]</tw-passagedata><tw-passagedata pid="31" name="ute6" tags="" position="239.5,1258" size="100,100">&quot;Ta till höger, till höger, till vänster och rakt fram.&quot;
 
 You repeat the directions to yourself and, before leaving, take a second look at the old truck. The passenger seat contains a pile of wooden decoy ducks and an old pair of snowshoes. 
 
@@ -215,7 +211,7 @@ Turning around the corner, you catch a glimpse of Lars&#39; discomfort as he mut
 
 [[Make your way up to the house|hill1]]</tw-passagedata><tw-passagedata pid="32" name="hill6a" tags="" position="183.5,254" size="100,100">&quot;VAD?!&quot; Lotta looks at you in horror.
 
-Your joke about Sven dying didn&#39;t go overwell. You apoligize and tell her to call the snowplow.
+Your joke about Sven dying doesn&#39;t go overwell. You apoligize and tell her to call the snowplow.
 
 She makes the call. As it is several hours before the plow can even make it to your remote part of town, you all decide to postpone the police trip until the next day.
 
@@ -225,19 +221,13 @@ Later that night, your chicken dinner is &#39;accidentally&#39; burnt. Luckily, 
 
 The night ends with a delicious, succulent chicken dinner. 
 
-[[end]]</tw-passagedata><tw-passagedata pid="34" name="ute5a" tags="" position="463.5,1443" size="100,100">&quot;Well, I am stuck.&quot; Sven says, &quot;Go up back to the house and tell Lotta to call the local snow plow - &#39;Ringa till Bjorn&#39;. I am going to go speak to Lars, our neighbor. He is a little reclusive.&quot;
+[[end]]</tw-passagedata><tw-passagedata pid="34" name="ute5a" tags="" position="463.5,1443" size="100,100">&quot;Well, I am stuck.&quot; Sven says, &quot;Go up back to the house and tell Lotta to call the local snow plow - &#39;Ring Björn&#39;. I am going to go speak to Lars, our neighbor. He is a little reclusive but a nice man.&quot;
 
 You get out of the car and ask Sven for directions,
 
 [[&quot;Hur kan jag gå till huset?&quot;|ute6]]</tw-passagedata><tw-passagedata pid="35" name="itemcheese" tags="" position="1121.3888854980469,416.2777781486511" size="100,100">(if: $ostAmount is 1)[(print: $selectedItem&#39;s &quot;pickupText&quot;)]
 
-(if: $ostAmount is 2)[(print: $selectedItem&#39;s &quot;pickupText&quot;) Lotta gives you a look.]
-
-(if: $ostAmount is 3 or 4)[(print: $selectedItem&#39;s &quot;pickupText&quot;) Lotta gives you yet another look. You can&#39;t help it, the cheese is so good!]
-
-(if: $ostAmount is 5)[(print: $selectedItem&#39;s &quot;pickupText&quot;) You eat the last of the cheese.]
-
-(if: $ostAmount &gt; 5)[You reach for the cheese but there is no more. Lotta looks perturbed, &quot;Vi har inte mer ost!&quot;]
+(if: $ostAmount is 2)[(print: $selectedItem&#39;s &quot;pickupText&quot;) Lotta gives you a look.](if: $ostAmount is 3 or 4)[(print: $selectedItem&#39;s &quot;pickupText&quot;) Lotta gives you yet another look. You can&#39;t help it, the cheese is so good!](if: $ostAmount is 5)[(print: $selectedItem&#39;s &quot;pickupText&quot;) You eat the last of the cheese.](if: $ostAmount &gt; 5)[You reach for the cheese but there is no more. Lotta looks perturbed, &quot;Vi har inte mer ost!&quot;]
 
 (link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="36" name="ute0" tags="" position="1066.5,883" size="100,100">Deciding to skip breakfast, you lay in bed watching the forest through the window. A short time later Sven comes back to invite you to drive to town. (if: $Q1 is 1)[He gives you two pills and a glass of water. Do you take them?
 
