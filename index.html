@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Svenska II" startnode="1" creator="Twine" creator-version="2.2.1" ifid="34270009-1BA4-4FCE-90E2-7496379429D6" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Natt 1" tags="" position="595.5,74" size="100,100">You wake up in the middle of the night; it is dark and still outside. The snow has stopped falling and the clouds are breaking up. The only light is a half moon peeks through the bare branches of the trees.
+<tw-storydata name="Svenska II" startnode="1" creator="Twine" creator-version="2.3.1" ifid="34270009-1BA4-4FCE-90E2-7496379429D6" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="God Natt 1" tags="" position="578.5,66" size="100,100">You wake up in the middle of the night; it is dark and still outside. The snow has stopped falling and the clouds are breaking up. The only light is a half moon peeks through the bare branches of the trees.
 
 As you lay in bed you begin to wonder how you found yourself in this strange place.
 
@@ -30,7 +30,7 @@ A motion detector-activated light turns on and you hear the trample of footsteps
 
 Was it a deer? A person? Some strange thing going bump in the night?
 
-Not feeling superstitious, you shake it off and dive back under the covers to fall asleep. After all, there are plenty of wild animals in the Swedish skogen. 
+Not feeling superstitious, you shake it off and dive back under the covers to fall asleep. After all, there are plenty of wild animals in den Svenska skogen. 
 
 [[Sov| God Morgon]]</tw-passagedata><tw-passagedata pid="4" name=" God Morgon" tags="" position="977.5,74" size="100,100">(set: $extraSleep to 0)
 
@@ -51,9 +51,9 @@ You ask yourself how you feel. Definitely better than yesterday. But does it qua
 (link:&quot;Ja, jag mår bra.&quot;)[(set: $Q1 to 0)(goto: &quot;Sven1&quot;)]
 
 (link:&quot;Nej, jag mår inte bra.&quot;)[(set: $Q1 to 1)(goto: &quot;Sven1&quot;)]
-</tw-passagedata><tw-passagedata pid="6" name="Sven1" tags="" position="1289.5,87" size="100,100">(set: $ostAmount to 0)(set: $keksAmount to 0)(set: $paprikaAmount to 0)(set: $keks to (datamap:&quot;name&quot;, &quot;Keks&quot;, &quot;description&quot;,&quot;A thick cracker with sunflower seeds around its crust.&quot;, &quot;pickupText&quot;, &quot;You take a delicious thick cracker with sunflower seeds around its crust.&quot;, &quot;isCarried&quot;, false))(set: $ost to (datamap:&quot;name&quot;, &quot;Ost&quot;, &quot;description&quot;,&quot;A creamy, light cheese, sliced up for you.&quot;, &quot;pickupText&quot;, &quot;You take a couple of slices of a creamy, light cheese.&quot;, &quot;pickupMoreText&quot;, &quot;You take more of the delicious cheese.&quot;, &quot;isCarried&quot;, false))(set: $paprika to (datamap:&quot;name&quot;, &quot;Paprika&quot;, &quot;description&quot;,&quot;A green belll pepper, sliced thinly&quot;, &quot;pickupText&quot;, &quot;You grab a few slices of thin bell pepper and put them on your plate.&quot;, &quot;isCarried&quot;, false))
-(if: $Q1 is 0)[&quot;Ja visst! Det är bra!&quot; Sven says through the door, his smile coming through in the tone of his voice.]
-(if: $Q1 is 1)[&quot;Så synd!&quot; He sounds disappointed. &quot;Let me get you some more medicine.&quot;]
+</tw-passagedata><tw-passagedata pid="6" name="Sven1" tags="" position="1289.5,87" size="100,100">(set: $ostAmount to 0)(set: $keksAmount to 0)(set: $paprikaAmount to 0)(set: $keks to (datamap:&quot;name&quot;, &quot;Keks&quot;, &quot;description&quot;,&quot;A thick cracker with sunflower seeds around its crust.&quot;, &quot;pickupText&quot;, &quot;You take a delicious light, flat cracker with sunflower seeds and spread butter on it.&quot;, &quot;isCarried&quot;, false))(set: $ost to (datamap:&quot;name&quot;, &quot;Ost&quot;, &quot;description&quot;,&quot;A creamy, light cheese, sliced up for you.&quot;, &quot;pickupText&quot;, &quot;You take a couple of slices of a creamy, light cheese.&quot;, &quot;pickupMoreText&quot;, &quot;You take more of the delicious cheese.&quot;, &quot;isCarried&quot;, false))(set: $paprika to (datamap:&quot;name&quot;, &quot;Paprika&quot;, &quot;description&quot;,&quot;A green belll pepper, sliced thinly&quot;, &quot;pickupText&quot;, &quot;You grab a few slices of thin bell pepper and put them on your plate.&quot;, &quot;isCarried&quot;, false))
+(if: $Q1 is 0)[&quot;Javisst ja! Det är bra!&quot; Sven says through the door, his smile coming through in the tone of his voice.]
+(if: $Q1 is 1)[&quot;Vad synd!&quot; He sounds disappointed. &quot;Let me get you some more medicine.&quot;]
 &quot;Vill du ha frukost?&quot; He continues, &quot;Um, breakfast time?&quot;
 
 [[&quot;Ja, jag vill ha frukost.&quot;|frukost1]]
@@ -62,23 +62,23 @@ You ask yourself how you feel. Definitely better than yesterday. But does it qua
 
 &quot;Vad vill du äta?&quot; Lotta asks you. 
 
-(if: $keks&#39;s isCarried is false)[(link: &quot;Ta kex&quot;)[(set:$selectedItem to $keks)(set: $previousPassage to &quot;frukost1&quot;)(set: $keksAmount to 1)
+(if: $keks&#39;s isCarried is false)[(link: &quot;Ta knäckebröd med smör&quot;)[(set:$selectedItem to $keks)(set: $previousPassage to &quot;frukost1&quot;)(set: $keksAmount to 1)
 (set:$keks&#39;s isCarried to true)(goto: &quot;Item Acquired&quot;)]]
 
 (if: $ost&#39;s isCarried is false)[(link: &quot;Ta ost&quot;)[(set:$selectedItem to $ost)(set: $previousPassage to &quot;frukost1&quot;)(set: $ostAmount to $ostAmount + 1)(set:$ost&#39;s isCarried to true)(goto: &quot;itemcheese&quot;)]](if: $ost&#39;s isCarried is true and $ostAmount &lt;6)[(link: &quot;Ta mer ost&quot;)[(set:$selectedItem to $ost)(set: $previousPassage to &quot;frukost1&quot;)(set: $ostAmount to $ostAmount + 1)(goto: &quot;itemcheese&quot;)]]
 
 (if: $paprika&#39;s isCarried is false)[(link: &quot;Ta paprika&quot;)[(set:$selectedItem to $paprika)(set: $previousPassage to &quot;frukost1&quot;)(set:$paprika&#39;s isCarried to true)(set: $paprikaAmount to 1)(goto: &quot;Item Acquired&quot;)]]
 
-[[Take a look at the newspaper|frukost2]]</tw-passagedata><tw-passagedata pid="8" name="Item Acquired" tags="" position="1114.5,303" size="100,100">[(print: $selectedItem&#39;s &quot;pickupText&quot;)]
+[[Take a look at the newspaper on the table &quot;Gladborgs Posten&quot;|frukost2]]</tw-passagedata><tw-passagedata pid="8" name="Item Acquired" tags="" position="1099.5,269" size="100,100">[(print: $selectedItem&#39;s &quot;pickupText&quot;)]
 
 
-(link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="9" name="frukost2" tags="" position="1308.5,513" size="100,100">(set: $Q2 to 0)Sven turns to you as Lotta gets up to make tea.  Sven picks up the newspaper and speaks,
+(link:&quot;Done.&quot;)[(goto:$previousPassage)]</tw-passagedata><tw-passagedata pid="9" name="frukost2" tags="" position="1301.5,551" size="100,100">(set: $Q2 to 0)Sven turns to you as Lotta gets up to make tea.  He grabs the newspaper before you reach for it,
 
 &quot;I can&#39;t believe the paperboy made it up here through all this snow. The roads must be clear then.&quot;
 
-The front page shows a picture of Benny, the missing businessman. Sven tells you that search parties are out looking for him.
+The front page shows a picture of Benny, the missing businessman under the headline, &quot;VAR ÄR BENNY?&quot;. Sven tells you that search parties are out looking for him.
 
-Lotta pipes in, &quot;Va kan åka till polisen efter frukosten.&quot;
+Lotta pipes in, &quot;Vi kan åka till polisen efter frukosten.&quot;
 
 &quot;Yes,&quot; Sven adds, &quot;Maybe we can drive to town and talk to the police about your situation.&quot;
 
@@ -89,10 +89,10 @@ To town? &quot;How far is it,&quot; you wonder.
 
 </tw-passagedata><tw-passagedata pid="10" name="frukost3" tags="" position="1315.5,730" size="100,100">(if: $Q2 is 0)[&quot;Var ligger stan - inte &#39;den stad&#39;.&quot; Lotta helpfully corrects you.]
 
-&quot;Stan är femton minuter från vårt hus.&quot; Sven adds, &quot;Not too far, but it depends on this snow!&quot;
+&quot;Stan är 15 minuter från vårt hus.&quot; Sven adds, &quot;Not too far, but it depends on this snow!&quot;
 
 [[Take a cup of tea|frukost4]]
-</tw-passagedata><tw-passagedata pid="11" name="frukost4" tags="" position="1315.5,957" size="100,100">You sit there and finish your breakfast in silence. Sven begins to clean up when Lotta turns to him and says, &quot;Jag ska ringa polisen nu.&quot; 
+</tw-passagedata><tw-passagedata pid="11" name="frukost4" tags="" position="1315.5,957" size="100,100">You sit there and finish your breakfast in silence. Sven whistles as he begins to clean up when Lotta turns to him and says, &quot;Jag ska ringa polisen nu.&quot; 
 
 She picks up the kitchen landline. &quot;Ni kan åka utan mig.&quot;
 
@@ -106,7 +106,7 @@ Turning back to you, he says, &quot;Let&#39;s get moving, say goodbye to Lotta a
 (link: &quot;No way&quot;)[(set:$Q2 to 2)(goto: &quot;ute1&quot;)
 ]](if: $Q1 is 0)[[[&quot;Hej då!&quot;|ute1]]]</tw-passagedata><tw-passagedata pid="12" name="ute1" tags="" position="1291.5,1199" size="100,100">(if: $Q2 is 1)[You pop the two pills and wash them down with water.] (if: $Q2 is 2)[You pocket the pills and drink the water.] You put on your boots - finally dry - and what must be Lotta&#39;s spare coat. It is a size too small for you.
 
-&quot;Du har Lottas jacka, bra!&quot; Sven says, looking at the jacket. &quot;Ta på vantar och en mösse.&quot; He says, handing you mittens and then a knit cap. &quot;Det är kallt ute. In April! Can you believe it?!&quot; 
+&quot;Du har Lottas jacka, bra!&quot; Sven says, looking at the jacket. &quot;Ta på dig vantar och en mösse.&quot; He says, handing you mittens and then a knit cap. &quot;Det är kallt ute, mycket snö och is. In April! Can you believe it?!&quot; 
 
 As you step outside, you see that it is indeed still chilly. However, the spring sun is strong and the snow appears to have already begun melting. 
 
